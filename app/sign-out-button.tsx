@@ -6,7 +6,7 @@ export default function SignOutButton({ label }: { label: string }) {
     <form action={signOut}>
       <button
         type="submit"
-        className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm text-slate-600 transition hover:bg-white"
+        className="rounded-lg border border-white/15 px-3 py-1.5 text-xs font-medium text-slate-200 transition hover:border-white/30 hover:bg-white/10 hover:text-white"
       >
         {label}
       </button>

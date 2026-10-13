@@ -40,7 +40,7 @@ export default function Experts({
   const [heqja, hiq] = useActionState<FormState, FormData>(revokeExpert, {});
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-5">
+    <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
       <h2 className="text-base font-semibold text-slate-900">
         {t.expertsTitle}
       </h2>

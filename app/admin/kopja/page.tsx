@@ -42,14 +42,14 @@ export default async function BackupPage() {
   return (
     <main className="mx-auto w-full max-w-3xl px-5 py-10">
       <header className="mb-8">
-        <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-2xl font-bold tracking-tight text-brand-dark">
           {t.backupTitle}
         </h1>
         <p className="mt-1 text-sm text-slate-500">{t.backupIntro}</p>
       </header>
 
       {/* ---------- Kopja e plotë ---------- */}
-      <section className="mb-6 rounded-xl border border-slate-200 bg-white p-5">
+      <section className="mb-6 rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
         <h2 className="text-base font-semibold text-slate-900">
           {t.backupFullTitle}
         </h2>
@@ -88,7 +88,7 @@ export default async function BackupPage() {
       </section>
 
       {/* ---------- Për Excel ---------- */}
-      <section className="mb-6 rounded-xl border border-slate-200 bg-white p-5">
+      <section className="mb-6 rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
         <h2 className="text-base font-semibold text-slate-900">
           {t.backupCsvTitle}
         </h2>

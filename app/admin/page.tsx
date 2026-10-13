@@ -99,7 +99,7 @@ export default async function AdminPage() {
     <main className="mx-auto w-full max-w-5xl px-5 py-10">
       {/* Lidhjet, emaili dhe "Dil" rrinë te menyja anash. */}
       <header className="mb-6">
-        <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-2xl font-bold tracking-tight text-brand-dark">
           {t.usersTitle}
         </h1>
         <p className="mt-1 text-sm text-slate-500">
@@ -133,10 +133,10 @@ export default async function AdminPage() {
           Tani: hapësira zvogëlohet, emaili dhe data thyhen, butonat rrinë
           njëri mbi tjetrin kur s'ka vend, dhe kolonat dytësore vijnë vetëm
           kur ka hapësirë. */}
-      <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-200/50">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-slate-200 text-left text-slate-500">
+            <tr className="border-b border-slate-200 bg-slate-50 text-left text-[11px] tracking-wider text-slate-500 uppercase">
               <th className="px-2 py-3 font-medium md:px-3 lg:px-4">{t.usersColEmail}</th>
               <th className="px-2 py-3 font-medium md:px-3 lg:px-4">{t.usersColRole}</th>
               <th className="hidden px-2 py-3 font-medium lg:table-cell lg:px-4">{t.usersColActiveToday}</th>

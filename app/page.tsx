@@ -48,7 +48,7 @@ export default async function Page({ searchParams }: PageProps<"/">) {
   if (!hasSupabaseConfig()) {
     return (
       <main className="mx-auto w-full max-w-5xl px-5 py-10">
-        <h1 className="mb-6 text-2xl font-semibold tracking-tight text-slate-900">
+        <h1 className="mb-6 text-2xl font-bold tracking-tight text-brand-dark">
           {t.listTitle}
         </h1>
         <SetupNotice />
@@ -298,7 +298,7 @@ export default async function Page({ searchParams }: PageProps<"/">) {
     <main className="mx-auto w-full max-w-5xl px-5 py-10">
       <header className="mb-8 flex items-start justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+          <h1 className="text-2xl font-bold tracking-tight text-brand-dark">
             {t.listTitle}
           </h1>
           <p className="mt-1 text-sm text-slate-500">
@@ -351,7 +351,7 @@ export default async function Page({ searchParams }: PageProps<"/">) {
       {/* Termin të ri cakton kushdo veç ekspertit. Përdoruesi i thjeshtë e
           sheh pastaj vetëm atë që caktoi vetë. */}
       {user.canCreate && (
-          <details className="mb-6 rounded-xl border border-slate-200 bg-white">
+          <details className="mb-6 rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-200/50">
             <summary className="cursor-pointer px-5 py-4 text-sm font-medium text-slate-700 select-none">
               {t.listNewAppointment}
             </summary>
@@ -364,7 +364,7 @@ export default async function Page({ searchParams }: PageProps<"/">) {
           </details>
       )}
 
-      <div className="mb-4 space-y-3 rounded-xl border border-slate-200 bg-white p-3">
+      <div className="mb-4 space-y-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm shadow-slate-200/50">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <StatusFilter gjendja={gjendja} lang={lang} />
           <SearchBox gjendja={gjendja} t={t} />
@@ -410,10 +410,10 @@ export default async function Page({ searchParams }: PageProps<"/">) {
 
             `overflow-hidden` mbetet për qoshet e rrumbullakëta: pa të,
             ngjyra e rreshtit të parë e del jashtë harkut. */}
-        <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+        <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-200/50">
           <table className="w-full text-xs md:text-sm">
             <thead>
-              <tr className="border-b border-slate-200 text-left text-slate-500">
+              <tr className="border-b border-slate-200 bg-slate-50 text-left text-[11px] tracking-wider text-slate-500 uppercase">
                 {meZgjedhje && <th className="hidden w-9 py-3 pr-1.5 pl-4 md:table-cell md:pr-2" />}
                 <th className="py-3 pr-1.5 pl-3 font-medium whitespace-nowrap md:pr-2 md:pl-4 lg:pr-3">{t.colNr}</th>
                 <th className="px-1.5 py-3 font-medium md:px-2 lg:px-3">{t.colName}</th>

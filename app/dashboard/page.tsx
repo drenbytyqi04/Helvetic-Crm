@@ -244,7 +244,7 @@ export default async function DashboardPage({
   return (
     <main className="mx-auto w-full max-w-5xl px-5 py-10">
       <header className="mb-6">
-        <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-2xl font-bold tracking-tight text-brand-dark">
           {t.dashTitle}
         </h1>
         <p className="mt-1 text-sm text-slate-500">
@@ -455,7 +455,7 @@ export default async function DashboardPage({
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead>
-                      <tr className="border-b border-slate-200 text-left text-slate-500">
+                      <tr className="border-b border-slate-200 bg-slate-50 text-left text-[11px] tracking-wider text-slate-500 uppercase">
                         <th className="pb-2 font-medium">{t.dashColPerson}</th>
                         <th className="pb-2 font-medium">{t.dashColRole}</th>
                         <th className="pb-2 pl-3 font-medium">

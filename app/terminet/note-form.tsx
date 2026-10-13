@@ -34,7 +34,7 @@ export default function NoteForm({
     <form
       ref={formRef}
       action={action}
-      className="rounded-xl border border-slate-200 bg-white p-4"
+      className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm shadow-slate-200/50"
     >
       <input type="hidden" name="appointmentId" value={appointmentId} />
 

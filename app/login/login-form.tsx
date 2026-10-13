@@ -16,10 +16,10 @@ export default function LoginForm({ lang }: { lang: Lang }) {
   return (
     <form
       action={action}
-      className="w-full max-w-sm rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
+      className="w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/60"
     >
       {/* Emri nuk përsëritet: logoja mbi kartë e mban tashmë. */}
-      <h1 className="text-lg font-semibold text-slate-900">{t.loginHeading}</h1>
+      <h1 className="text-xl font-semibold tracking-tight text-slate-900">{t.loginHeading}</h1>
       <p className="mt-1 mb-5 text-sm text-slate-500">
         {t.loginTitle}
       </p>
@@ -34,7 +34,7 @@ export default function LoginForm({ lang }: { lang: Lang }) {
           required
           autoComplete="email"
           placeholder="ti@shembull.com"
-          className="w-full rounded-lg border border-slate-300 px-3 py-2 text-slate-900 outline-none placeholder:text-slate-400 focus:border-brand"
+          className="w-full rounded-lg border border-slate-300 px-3 py-2 text-slate-900 outline-none placeholder:text-slate-400 focus:border-brand focus:ring-4 focus:ring-brand/10"
         />
       </label>
 
@@ -49,14 +49,14 @@ export default function LoginForm({ lang }: { lang: Lang }) {
           minLength={6}
           autoComplete="current-password"
           placeholder={t.loginPasswordHint}
-          className="w-full rounded-lg border border-slate-300 px-3 py-2 text-slate-900 outline-none placeholder:text-slate-400 focus:border-brand"
+          className="w-full rounded-lg border border-slate-300 px-3 py-2 text-slate-900 outline-none placeholder:text-slate-400 focus:border-brand focus:ring-4 focus:ring-brand/10"
         />
       </label>
 
       <button
         type="submit"
         disabled={pending}
-        className="mt-5 w-full rounded-lg bg-brand px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-dark disabled:opacity-50"
+        className="mt-6 w-full rounded-lg bg-brand px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-dark disabled:opacity-50"
       >
         {pending ? t.loginWaiting : t.loginButton}
       </button>

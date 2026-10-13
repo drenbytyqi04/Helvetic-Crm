@@ -118,7 +118,7 @@ export default function AppointmentForm({
 
       {/* ---------- Personalia ---------- */}
       <TabPanel id="personalia">
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
+      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
         <h2 className="mb-4 text-base font-semibold text-slate-900">
           {t.tabPersonalia}
         </h2>
@@ -265,7 +265,7 @@ export default function AppointmentForm({
 
       {/* ---------- Të dhëna teknike ---------- */}
       <TabPanel id="teknike">
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
+      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
         <h2 className="mb-4 text-base font-semibold text-slate-900">
           {t.tabTechnical}
         </h2>
@@ -363,7 +363,7 @@ export default function AppointmentForm({
 
       {/* ---------- Rezultati ---------- */}
       <TabPanel id="rezultati">
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
+      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
         <h2 className="mb-4 text-base font-semibold text-slate-900">
           {t.tabResult}
         </h2>
@@ -459,7 +459,7 @@ export default function AppointmentForm({
 
       {/* ---------- Detaje të këshillimit ---------- */}
       <TabPanel id="detaje">
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
+      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
         <h2 className="mb-1 text-base font-semibold text-slate-900">
           {t.tabDetails}
         </h2>

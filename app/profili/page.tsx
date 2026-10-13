@@ -157,7 +157,7 @@ export default async function ProfilePage() {
     <main className="mx-auto w-full max-w-4xl px-5 py-10">
       <header className="mb-6">
         <div className="flex flex-wrap items-center gap-3">
-          <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+          <h1 className="text-2xl font-bold tracking-tight text-brand-dark">
             {t.profileTitle}
           </h1>
           <span

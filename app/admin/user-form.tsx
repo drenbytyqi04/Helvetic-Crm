@@ -29,7 +29,7 @@ export default function UserForm({ lang }: { lang: Lang }) {
   }, [state]);
 
   return (
-    <details className="mb-6 rounded-xl border border-slate-200 bg-white">
+    <details className="mb-6 rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-200/50">
       <summary className="cursor-pointer px-5 py-4 text-sm font-medium text-slate-700 select-none">
         {t.userNewPanel}
       </summary>

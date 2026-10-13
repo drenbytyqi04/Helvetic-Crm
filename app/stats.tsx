@@ -20,11 +20,11 @@ export function StatTile({
 }) {
   return (
     <div
-      className="rounded-xl border border-slate-200 bg-white p-4"
+      className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm shadow-slate-200/50"
       data-stat={etiketa}
     >
       <p className="text-sm text-slate-500">{etiketa}</p>
-      <p className="mt-1 text-2xl font-semibold tracking-tight text-slate-900">
+      <p className="mt-1 text-2xl font-bold tracking-tight text-brand-dark">
         {vlera}
       </p>
       {nen && <p className="mt-0.5 text-xs text-slate-400">{nen}</p>}
@@ -43,7 +43,7 @@ export function Card({
   children: ReactNode;
 }) {
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-5">
+    <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
       <h2 className="text-base font-semibold text-slate-900">{titull}</h2>
       {nen && <p className="mt-0.5 mb-4 text-xs text-slate-500">{nen}</p>}
       {!nen && <div className="mb-4" />}

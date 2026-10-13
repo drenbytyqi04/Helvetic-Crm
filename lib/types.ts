@@ -426,7 +426,7 @@ export function roleLabel(role: string, t: Dict): string {
 export const ROLE_CLASSES: Record<string, string> = {
   user: "bg-slate-100 text-slate-600 ring-slate-200",
   manager: "bg-sky-100 text-sky-800 ring-sky-200",
-  admin: "bg-slate-900 text-white ring-slate-900",
+  admin: "bg-brand-dark text-white ring-brand-dark",
   expert: "bg-violet-100 text-violet-800 ring-violet-200",
 };
 

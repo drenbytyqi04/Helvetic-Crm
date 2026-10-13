@@ -12,6 +12,8 @@
   --color-brand: #014e92;
   --color-brand-dark: #042342;
   --color-brand-light: #2b78c2;
+  /* E kuqja e kryqit zviceran te logoja: vetëm për theks, jo për butona. */
+  --color-accent: #d7141a;
 }
 
 body {

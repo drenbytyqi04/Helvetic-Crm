@@ -17,7 +17,7 @@ export default function LanguageSwitcher({ aktive }: { aktive: Lang }) {
   const [duke, startTransition] = useTransition();
 
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-0.5 rounded-lg bg-white/5 p-0.5">
       {LANGS.map((g) => (
         <button
           key={g.code}
@@ -29,10 +29,10 @@ export default function LanguageSwitcher({ aktive }: { aktive: Lang }) {
               router.refresh();
             })
           }
-          className={`rounded px-2 py-1 text-xs transition ${
+          className={`rounded-md px-2 py-1 text-xs transition ${
             g.code === aktive
-              ? "bg-brand font-medium text-white"
-              : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+              ? "bg-white font-medium text-brand-dark"
+              : "text-slate-300 hover:text-white"
           }`}
         >
           {g.label}

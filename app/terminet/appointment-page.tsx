@@ -158,7 +158,7 @@ export default async function AppointmentPage({
             {t.backToList}
           </Link>
           <div className="mt-2 flex flex-wrap items-center gap-3">
-            <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+            <h1 className="text-2xl font-bold tracking-tight text-brand-dark">
               {termini.nr != null && (
                 <span className="mr-2 font-normal text-slate-400">
                   #{termini.nr}
@@ -223,7 +223,7 @@ export default async function AppointmentPage({
         /* Termini i dikujt tjetër: lexohet, por nuk ndryshohet. */
         <div className="space-y-6">
           <TabPanel id="personalia">
-          <section className="rounded-xl border border-slate-200 bg-white p-5">
+          <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
             <h2 className="mb-4 text-base font-semibold text-slate-900">
               {t.tabPersonalia}
             </h2>
@@ -255,7 +255,7 @@ export default async function AppointmentPage({
           </TabPanel>
 
           <TabPanel id="teknike">
-          <section className="rounded-xl border border-slate-200 bg-white p-5">
+          <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
             <h2 className="mb-4 text-base font-semibold text-slate-900">
               {t.tabTechnical}
             </h2>
@@ -278,7 +278,7 @@ export default async function AppointmentPage({
           </TabPanel>
 
           <TabPanel id="rezultati">
-          <section className="rounded-xl border border-slate-200 bg-white p-5">
+          <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
             <h2 className="mb-4 text-base font-semibold text-slate-900">
               {t.tabResult}
             </h2>
@@ -309,7 +309,7 @@ export default async function AppointmentPage({
           </TabPanel>
 
           <TabPanel id="detaje">
-          <section className="rounded-xl border border-slate-200 bg-white p-5">
+          <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/50">
             <h2 className="mb-4 text-base font-semibold text-slate-900">
               {t.tabDetails}
             </h2>
@@ -340,10 +340,10 @@ export default async function AppointmentPage({
           </p>
         )}
 
-        <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-200/50">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-slate-200 text-left text-slate-500">
+              <tr className="border-b border-slate-200 bg-slate-50 text-left text-[11px] tracking-wider text-slate-500 uppercase">
                 <th className="p-4 font-medium whitespace-nowrap">{t.noteColUser}</th>
                 <th className="p-4 font-medium">{t.noteColBody}</th>
                 <th className="p-4 font-medium whitespace-nowrap">{t.noteColDate}</th>

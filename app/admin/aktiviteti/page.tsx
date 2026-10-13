@@ -70,7 +70,7 @@ export default async function ActivityPage() {
   return (
     <main className="mx-auto w-full max-w-5xl px-5 py-10">
       <header className="mb-6">
-        <h1 className="text-2xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-2xl font-bold tracking-tight text-brand-dark">
           {t.activityTitle}
         </h1>
         <p className="mt-1 text-sm text-slate-500">
@@ -84,10 +84,10 @@ export default async function ActivityPage() {
         </p>
       )}
 
-      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-200/50">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-slate-200 text-left text-slate-500">
+            <tr className="border-b border-slate-200 bg-slate-50 text-left text-[11px] tracking-wider text-slate-500 uppercase">
               <th className="p-4 font-medium">{t.activityColUser}</th>
               {dite.map((d) => (
                 <th
