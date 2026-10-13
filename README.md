@@ -60,10 +60,16 @@ npm install
 Kjo krijon dosjen `node_modules` (kod i shkruar nga të tjerët që projekti e
 përdor). Zgjat një-dy minuta dhe bëhet vetëm një herë.
 
-### Hapi 4–5: Baza e të dhënave — NË PRITJE ⏳
+### Hapi 4–5: Baza e të dhënave
 
-Baza e Supabase-it për Helvetic nuk është lidhur ende. Kur të vendoset si do
-të bëhet, skedat te `supabase/` ekzekutohen me radhë në projektin e ri.
+| | |
+| --- | --- |
+| Adresa (URL) | `https://gfgwjwjoxsgrpmonumbn.supabase.co` |
+
+Tabelat krijohen me një skedë të vetme: `supabase/helvetic-setup.sql`.
+Supabase → **SQL Editor** → **New query** → ngjit gjithë skedën → **Run**.
+Ekzekutohet vetëm një herë, mbi projektin bosh. Udhëzimet për llogarinë e
+parë (admin) janë në krye të skedës.
 
 ### Hapi 6: Kopjo skedën e rregullimeve
 
