@@ -28,8 +28,8 @@ export default async function Sidebar({ user }: { user: CurrentUser }) {
           <Image
             src="/shenja.png"
             alt=""
-            width={128}
-            height={104}
+            width={256}
+            height={151}
             priority
             className="h-8 w-auto shrink-0"
           />

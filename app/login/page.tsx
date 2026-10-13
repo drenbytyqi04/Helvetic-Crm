@@ -21,10 +21,10 @@ export default async function LoginPage({
       <Image
         src="/logo.png"
         alt="Helvetic"
-        width={720}
-        height={492}
+        width={900}
+        height={612}
         priority
-        className="h-28 w-auto"
+        className="h-36 w-auto"
       />
       {hequr === "1" && (
         <p
