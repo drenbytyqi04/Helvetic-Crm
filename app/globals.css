@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/**
+ * Ngjyrat e markës, marrë nga vetë logoja (`public/logo.png`): bluja e saj
+ * shkon nga #0057B1 te #0098E9. Deri tani butonat ishin ngjyrë hiri e errët;
+ * tani mbajnë të njëjtën blu si shenja lart, që faqja të duket e një pjese
+ * me logon.
+ *
+ * `brand` është zgjedhur pak më e errët se mesi i logos me qëllim: shkronja e
+ * bardhë mbi të jep kontrast 5.3:1, mbi kufirin 4.5:1 që kërkohet për tekst
+ * të lexueshëm. Bluja e ndritshme e logos do të jepte vetëm 3.4:1 — e bukur
+ * për një shenjë, e dobët për një buton.
+ */
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --color-brand: #0069c8;
+  --color-brand-dark: #00518f;
+  --color-brand-light: #0098e9;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
